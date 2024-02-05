@@ -3,7 +3,7 @@
 
 # alphaci <img src="man/figures/logo.png" align="right" width="160" height="135"/>
 
-[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/alphaci.png)](https://cran.r-project.org/package=alphaci)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/alphaci)](https://cran.r-project.org/package=alphaci)
 [![R-CMD-check](https://github.com/JonasMoss/alphaci/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JonasMoss/alphaci/actions/workflows/R-CMD-check.yaml)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
@@ -17,8 +17,13 @@ supported, with special emphasis on small samples and non-normality.
 
 ## Installation
 
-The package is not available on `CRAN` yet, so use the following command
-from inside `R`:
+Install from CRAN:
+
+``` r
+install.packages("alphaci")
+```
+
+Or use the development version.
 
 ``` r
 # install.packages("remotes")
@@ -68,11 +73,11 @@ alphaci_std(x)
 #> 
 #> 95% confidence interval (n = 2709).
 #>     0.025     0.975 
-#> 0.6828923 0.7246195 
+#> 0.6938373 0.7331658 
 #> 
 #> Sample estimates.
 #>     alpha        sd 
-#> 0.7037559 0.5536964
+#> 0.7135016 0.5218675
 ```
 
 ## Supported techniques
@@ -163,39 +168,37 @@ pull requests to contribute.
 
 ## References
 
--   Falk, C. F., & Savalei, V. (2011). The relationship between
-    unstandardized and standardized alpha, true reliability, and the
-    underlying measurement model. Journal of Personality Assessment,
-    93(5), 445-453. https://doi.org/10.1080/00223891.2011.594129
--   Cronbach, L. J. (1951). Coefficient alpha and the internal structure
-    of tests. Psychometrika, 16(3), 297-334.
-    https://doi.org/10.1007/BF02310555#’
--   Efron, B. (1987). Better Bootstrap Confidence Intervals. Journal of
-    the American Statistical Association, 82(397), 171-185.
-    https://doi.org/10.2307/2289144
--   Maydeu-Olivares, A., Coffman, D. L., & Hartmann, W. M. (2007).
-    Asymptotically distribution-free (ADF) interval estimation of
-    coefficient alpha. Psychological Methods, 12(2), 157-176.
-    https://doi.org/10.1037/1082-989X.12.2.157
--   van Zyl, J. M., Neudecker, H., & Nel, D. G. (2000). On the
-    distribution of the maximum likelihood estimator of Cronbach’s
-    alpha. Psychometrika, 65(3), 271-280.
-    https://doi.org/10.1007/BF02296146
--   Yuan, K.-H., & Bentler, P. M. (2002). On robustness of the
-    normal-theory based asymptotic distributions of three reliability
-    coefficient estimates. Psychometrika, 67(2), 251-259.
-    https://doi.org/10.1007/BF02294845
--   Joanes, D. N., & Gill, C. A. (1998). Comparing measures of sample
-    skewness and kurtosis. Journal of the Royal Statistical Society:
-    Series D (The Statistician), 47(1), 183-189.
-    https://doi.org/10.1111/1467-9884.00122
--   Hayashi, K., & Kamata, A. (2005). A note on the estimator of the
-    alpha coefficient for standardized variables under normality.
-    Psychometrika, 70(3), 579-586.
-    https://doi.org/10.1007/s11336-001-0888-1
--   Neudecker, H. (2006). On the Asymptotic Distribution of the
-    “Natural” Estimator of Cronbach’s Alpha with Standardised Variates
-    under Nonnormality, Ellipticity and Normality. In P. Brown, S. Liu,
-    & D. Sharma (Eds.), Contributions to Probability and Statistics:
-    Applications and Challenges (pp. 167-171). World Scientific.
-    https://doi.org/10.1142/9789812772466_0013
+- Falk, C. F., & Savalei, V. (2011). The relationship between
+  unstandardized and standardized alpha, true reliability, and the
+  underlying measurement model. Journal of Personality Assessment,
+  93(5), 445-453. https://doi.org/10.1080/00223891.2011.594129
+- Cronbach, L. J. (1951). Coefficient alpha and the internal structure
+  of tests. Psychometrika, 16(3), 297-334.
+  https://doi.org/10.1007/BF02310555#’
+- Efron, B. (1987). Better Bootstrap Confidence Intervals. Journal of
+  the American Statistical Association, 82(397), 171-185.
+  https://doi.org/10.2307/2289144
+- Maydeu-Olivares, A., Coffman, D. L., & Hartmann, W. M. (2007).
+  Asymptotically distribution-free (ADF) interval estimation of
+  coefficient alpha. Psychological Methods, 12(2), 157-176.
+  https://doi.org/10.1037/1082-989X.12.2.157
+- van Zyl, J. M., Neudecker, H., & Nel, D. G. (2000). On the
+  distribution of the maximum likelihood estimator of Cronbach’s alpha.
+  Psychometrika, 65(3), 271-280. https://doi.org/10.1007/BF02296146
+- Yuan, K.-H., & Bentler, P. M. (2002). On robustness of the
+  normal-theory based asymptotic distributions of three reliability
+  coefficient estimates. Psychometrika, 67(2), 251-259.
+  https://doi.org/10.1007/BF02294845
+- Joanes, D. N., & Gill, C. A. (1998). Comparing measures of sample
+  skewness and kurtosis. Journal of the Royal Statistical Society:
+  Series D (The Statistician), 47(1), 183-189.
+  https://doi.org/10.1111/1467-9884.00122
+- Hayashi, K., & Kamata, A. (2005). A note on the estimator of the alpha
+  coefficient for standardized variables under normality. Psychometrika,
+  70(3), 579-586. https://doi.org/10.1007/s11336-001-0888-1
+- Neudecker, H. (2006). On the Asymptotic Distribution of the “Natural”
+  Estimator of Cronbach’s Alpha with Standardised Variates under
+  Nonnormality, Ellipticity and Normality. In P. Brown, S. Liu, & D.
+  Sharma (Eds.), Contributions to Probability and Statistics:
+  Applications and Challenges (pp. 167-171). World Scientific.
+  https://doi.org/10.1142/9789812772466_0013
